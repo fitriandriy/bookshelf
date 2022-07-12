@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    background-image: url('../assets/bg-left.png');
+    background-position:bottom;
+    background-repeat: repeat-x;
+    background-size: auto 350px;
+    position: relative;
+}
+
+.header-content {
+    padding: 50px 0 0 50px;
+}
+
+header #image-header img{
+    height: 350px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.header-content p {
+    margin-bottom: 10px;
+}
+
+#add-button, aside button {
+    padding: 0 10px 0 10px;
+}
+
+.header-content button, input {
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 35px;
+    /* margin: 15px 5px 0 0; */
+}
+
+aside img {
+    border-radius: 100%;
+    border: 2px solid rgb(185, 184, 223);
+}
+
+aside .instagram {
+    display: flex;
+    padding-top: 10px;
+}
+
+aside input {
+    border: 1px solid rgba(84, 77, 246, 1);
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.header-content input {
+    /* width: 300px; */
+    border: 0 solid white;
+    margin: 0 5px 10px 0;
+}
+
+button#sedang-dibaca, button#selesai-dibaca, .header-content button, aside button {
+    color: white;
+    border: 0 solid rgba(84, 77, 246, 1);
+    background-color: rgba(84, 77, 246, 1);
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.search.add #search-button {
+    width: 70px;
+}
+
+.search.add #add-button {
+    width: 160px;
+}
+
+.content{
+    display: flex;
+    padding: 10px 40px 0 40px;
+}
+
+main {
+    display: flex;
+    flex-grow: 2;
+}
+
+main .sedang-dibaca, main .selesai-dibaca {
+    width: 50%;
+    padding: 0 5px 0 5px;
+}
+
+main .sedang-dibaca button, main .selesai-dibaca button{
+    width: 100%;
+}
+
+/* button */
+.item-button .check-button {
+    background: url('../assets/check-outline.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.item-button .check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.item-button .trash-button {
+    background: url('../assets/trash-outline.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.item-button .trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.item-button .undo-button {
+    background: url('../assets/undo-ouline.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.item-button .undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.item-button .check-button:focus, .item-button .trash-button {
+    outline: none;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.item .item-button {
+    display: flex;
+    width: 70px;
+}
+
+.sedang-dibaca .list-item {
+    margin-right: 20px;
+}
+
+.shadow {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.2);
+}

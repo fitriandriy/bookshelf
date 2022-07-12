@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>BookShelf</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>BookShelf</h1>
+            <p>Buat daftar bukumu menjadi lebih terorganisir <br>dengan BookShelf!</p>
+            <form action="#" id="form">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="judul">Judul: </label>
+                        </td>
+                        <td>
+                            <label for="penulis">Penulis: </label>
+                        </td>
+                        <td>
+                            <label for="tahun">Tahun: </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="judul" id="judul">
+                        </td>
+                        <td>
+                            <input type="text" name="penulis" id="penulis">
+                        </td>
+                        <td>
+                            <input type="text" name="tahun" id="tahun">
+                        </td>
+                    </tr>
+                </table>
+                <button id="add-button" type="submit" value="Submit" name="Submit" class="btn-submit">TAMBAH BUKU</button>
+            </form>
+        </div>
+        <div id="image-header">
+            <img src="assets/bg-right.png" alt="">
+        </div>
+    </header>
+    <div class="content">
+        <aside>
+            <!-- <div class="search-bar">
+                <input type="text">
+                <button>CARI</button>
+            </div> -->
+            <img src="assets/fitri.png" alt="">
+            <p>Created by: <br>
+                Fitri Andriyani, Student at Jember University <br>
+                Was born on January, 07, 2002 in Banyuwangi</p>
+            <div class="instagram">
+                <img src="assets/instagram.png" alt="">
+                <div class="username">@ftr_adry</div>
+            </div>
+        </aside>
+        <main>
+            <div class="sedang-dibaca">
+                <button id="sedang-dibaca">SEDANG DIBACA</button>
+                <div class="list-item" id="books"></div>
+            </div>
+            <div class="selesai-dibaca">
+                <button id="selesai-dibaca">SELESAI DIBACA</button>
+                <div class="list-item" id="completed-books"></div>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
